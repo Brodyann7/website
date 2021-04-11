@@ -8,8 +8,8 @@
 	content
 {%- endcomment -%}
 
-{%- assign _title = include.title | default: 'Untitled' -%}
-{%- assign _slug = include.title | strip_html | slugify | default: 'untitled' -%}
+{%- assign _title = include.title | default: '' -%}
+{%- assign _slug = include.title | strip_html | slugify | default: '' -%}
 
 {%- if include.photo and include.photo-alt -%}
 	{%- capture _photo -%}
